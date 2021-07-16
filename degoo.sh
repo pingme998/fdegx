@@ -1,4 +1,7 @@
-
+PASSUSER=$(curl 'https://www.uuidgenerator.net/version1/bulk?amount=1' |sed -e 's/^\(.\{8\}\).*/\1/')
+echo $PWDS'@gmail.com' >>PWDSlist
+echo "$PWDS@$PWDS" >>PWDSlist
+echo "----------------------" >>PWDSlist
 curl 'https://degoo.com/me/signup' \
   -H 'authority: degoo.com' \
   -H 'cache-control: max-age=0' \
